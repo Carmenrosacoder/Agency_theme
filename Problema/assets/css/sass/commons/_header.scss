@@ -1,0 +1,26 @@
+.navbar{
+    border:none;
+background-color: transparent;
+}
+.navbar-header a{
+    font-family: 'Kaushan Script', cursive;
+}
+.navbar-default .navbar-brand{
+    color: #FED136;
+}
+#hero-img{
+    background-image: url(../../img/header-bg.jpg);
+    background-size: cover;
+    height: 670px;
+    background-position: center;
+    .welcome{
+        color: white;
+        font-size: 25px;
+    }
+    .texto{
+        padding-top: 210px;
+    }
+    #title{
+        font-size: 65px;
+    }
+}

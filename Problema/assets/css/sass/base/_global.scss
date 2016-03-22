@@ -1,0 +1,25 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    padding-left: 55px;
+    padding-right: 55px;
+}
+h1{
+    text-transform: uppercase;
+    color: white;
+}
+section,footer{
+    text-align: center;
+    padding: 70px 0px;
+}
+.btn_yellow{
+
+    color: white;
+    background-color: #FED136;
+    padding: 15px 25px;
+    text-transform: uppercase;
+}
+.border{
+    border-radius: 3px;
+}

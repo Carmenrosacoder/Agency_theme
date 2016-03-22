@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+        tittle
+        link(href='Problema/assets/css/bootstrap.min.css', rel='stylesheet')
+        link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet')    
+        link(href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet')
+        link(href='Problema/assets/css/main.css' , rel='stylesheet')
+    - var texto = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    mixin servics(classe)
+        i(class=classe)
+        p= texto
+    body
+        include _header.jade
+        include _services.jade
+        include _footer.jade
+        
+        

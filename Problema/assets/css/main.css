@@ -1,0 +1,64 @@
+footer {
+  background-color: #222222; }
+  footer form input {
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px; }
+
+textarea {
+  width: 100%;
+  padding: 15px;
+  margin-top: 15px;
+  height: 190px; }
+
+.formulario {
+  padding-top: 50px; }
+
+* {
+  font-family: 'Montserrat', sans-serif; }
+
+.container {
+  padding-left: 55px;
+  padding-right: 55px; }
+
+h1 {
+  text-transform: uppercase;
+  color: white; }
+
+section, footer {
+  text-align: center;
+  padding: 70px 0px; }
+
+.btn_yellow {
+  color: white;
+  background-color: #FED136;
+  padding: 15px 25px;
+  text-transform: uppercase; }
+
+.border {
+  border-radius: 3px; }
+
+.navbar {
+  border: none;
+  background-color: transparent; }
+
+.navbar-header a {
+  font-family: 'Kaushan Script', cursive; }
+
+.navbar-default .navbar-brand {
+  color: #FED136; }
+
+#hero-img {
+  background-image: url(../../img/header-bg.jpg);
+  background-size: cover;
+  height: 670px;
+  background-position: center; }
+  #hero-img .welcome {
+    color: white;
+    font-size: 25px; }
+  #hero-img .texto {
+    padding-top: 210px; }
+  #hero-img #title {
+    font-size: 65px; }
+
+/*# sourceMappingURL=main.css.map */
