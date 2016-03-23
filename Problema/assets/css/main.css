@@ -1,11 +1,19 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat";
 .text-black {
   color: black; }
 
 .text-gris {
   color: #80828A; }
 
+.text-yellow {
+  color: #FED136; }
+
 footer {
-  background-color: #222222; }
+  background-color: #222222;
+  background-image: url(../../img/map-image.png);
+  background-size: cover;
+  height: 800px;
+  background-position: center; }
   footer form input {
     width: 100%;
     padding: 15px;
@@ -41,7 +49,7 @@ section, footer {
 .btn_yellow {
   color: white;
   background-color: #FED136;
-  padding: 15px 25px;
+  padding: 17px 32px;
   text-transform: uppercase; }
 
 .border {
@@ -58,7 +66,135 @@ section, footer {
 #portf {
   background-color: #F7F7F7; }
   #portf img {
+    background-color: white;
+    padding-bottom: 90px;
+    width: 100%;
+    margin-bottom: 30px; }
+  #portf .mg_t {
+    margin-top: -110px; }
+
+#about img {
+  background-color: #F0F0ED;
+  padding: 10px; }
+#about hr {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 2px;
+  height: 120px;
+  text-align: center;
+  background-color: #F0F0ED; }
+
+/*our team*/
+#ourteam {
+  background-color: #F7F7F7; }
+  #ourteam img {
+    background-color: white;
+    padding: 10px; }
+
+.redes {
+  font-size: 17px;
+  color: white;
+  background-color: black;
+  padding: 11px; }
+
+.fa-facebook {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+#logos {
+  padding: 30px; }
+
+/*TIMELINE*/
+#timeline .timeline-item:after, #timeline .timeline-item:before {
+  content: '';
+  display: block;
+  width: 100%;
+  clear: both; }
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto; }
+
+#timeline {
+  width: 100%;
+  margin: 30px auto;
+  position: relative;
+  padding: 0 10px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+  #timeline:before {
+    content: "";
+    width: 3px;
+    height: 100%;
+    background: #F1F1F1;
+    left: 50%;
+    top: 0;
+    position: absolute; }
+  #timeline:after {
+    content: "";
+    clear: both;
+    display: table;
     width: 100%; }
+  #timeline .timeline-item {
+    margin-bottom: 110px;
+    position: relative; }
+    #timeline .timeline-item .timeline-icon {
+      width: 140px;
+      height: 140px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      overflow: hidden;
+      margin-left: -70px;
+      margin-top: 20px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%; }
+    #timeline .timeline-item .timeline-content {
+      width: 45%;
+      padding: 20px 40px; }
+      #timeline .timeline-item .timeline-content.right {
+        float: right; }
+
+@media screen and (max-width: 768px) {
+  #timeline {
+    margin: 30px;
+    padding: 0px;
+    width: 90%; }
+    #timeline:before {
+      left: 0; }
+    #timeline .timeline-item .timeline-content {
+      width: 90%;
+      float: right; }
+      #timeline .timeline-item .timeline-content p, #timeline .timeline-item .timeline-content h5 {
+        text-align: left; }
+      #timeline .timeline-item .timeline-content:before, #timeline .timeline-item .timeline-content.right:before {
+        left: 10%;
+        margin-left: -6px;
+        border-left: 0;
+        border-right: 7px solid #ee4d4d; }
+    #timeline .timeline-item .timeline-icon {
+      left: 0;
+      margin-left: -45px;
+      width: 100px;
+      height: 100px; } }
+a:hover {
+  background-color: black;
+  color: white; }
 
 .navbar {
   border: none;
@@ -68,19 +204,49 @@ section, footer {
   font-family: 'Kaushan Script', cursive; }
 
 .navbar-default .navbar-brand {
+  color: #FED136;
+  font-size: 25px; }
+
+.navbar-default .navbar-nav > li > a {
+  color: white; }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+  color: white;
+  background-color: #FED136;
+  border-radius: 3px; }
+
+.navbar-default .navbar-nav > li > a:hover {
   color: #FED136; }
 
 #hero-img {
   background-image: url(../../img/header-bg.jpg);
   background-size: cover;
-  height: 670px;
+  height: 690px;
   background-position: center; }
   #hero-img .welcome {
+    font-family: 'Droid Serif', serif;
     color: white;
-    font-size: 25px; }
+    font-size: 40px; }
   #hero-img .texto {
-    padding-top: 210px; }
+    padding-top: 150px; }
   #hero-img #title {
-    font-size: 65px; }
+    font-weight: bold;
+    font-size: 70px; }
+
+/*opaque nav*/
+.opaque-navbar {
+  background-color: transparent;
+  transition: background-color .5s ease 0s; }
+
+.opaque-navbar.opaque {
+  background-color: black;
+  height: 60px;
+  transition: background-color .5s ease 0s; }
+
+@media (max-width: 992px) {
+  .opaque-navbar {
+    background-color: black;
+    height: 60px;
+    transition: background-color .5s ease 0s; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -2,21 +2,51 @@ doctype html
 html
     head
         tittle
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
         link(href='Problema/assets/css/bootstrap.min.css', rel='stylesheet')
+        link(rel='stylesheet' href='js/bootstrap.min.js' media='screen' title='no title' charset='utf-8')
         link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', rel='stylesheet')
         link(href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet')    
         link(href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Droid+Serif:400italic' rel='stylesheet' type='text/css')
         link(href='Problema/assets/css/main.css' , rel='stylesheet')
     - var texto = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    - var tex = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit."
     mixin servics(classe , titulo)
         i(class=classe)
         h5= titulo
         p(class='text-gris')= texto
     mixin portfoli(titulo , text , src)
         img(src=src)
-        h5= titulo
-        p(class='text-gris')= text
+        .mg_t
+            h5= titulo
+            p(class='text-gris')= text
+    mixin aboutt(titulo , subtittle , src )
+        .timeline-item
+            .timeline-icon
+                img(src=src class='img-circle')
+            .timeline-content
+                h5(class='text-right')= titulo
+                h5(class='text-right')= subtittle
+                p(class='text-right')= tex
+    mixin abouttright(titulo , subtittle , src )
+        .timeline-item
+            .timeline-icon
+                img(src=src class='img-circle')
+            .timeline-content.right
+                h5(class='text-left')= titulo
+                h5(class='text-left')= subtittle
+                p(class='text-left')= tex
         
+    mixin our_team(descripcion , titulo , classe , classes , classss , src)
+        img(src=src class='img-circle')
+        h5= titulo
+        p(class='text-gris')= descripcion  
+        i(class=classe)
+        i(class=classes) 
+        i(class=classss) 
+                
         
         
     body
@@ -24,6 +54,9 @@ html
         include _services.jade
         include _portfolio.jade
         include _about.jade
+        include _ouramazingteam.jade
         include _footer.jade
-        
+        script(src='Problema/assets/js/jquery.js')
+        script(src='Problema/assets/js/bootstrap.min.js')
+        script(src='Problema/assets/js/agency.js')
         

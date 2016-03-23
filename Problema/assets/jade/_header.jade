@@ -1,6 +1,6 @@
 header
     // Fixed navbar
-    .navbar.navbar-default.navbar-fixed-top(role='navegacion')
+    .navbar.navbar-default.navbar-fixed-top.opaque-navbar(role='navegacion')
       .container
         .navbar-header
           button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
@@ -11,20 +11,21 @@ header
           a.navbar-brand(href='#') Start Bootstrap
         .navbar-collapse.collapse
           ul.nav.navbar-nav.navbar-right
-            li.active
-              a(href='#') SERVICES
             li
-              a(href='#') PORTFOLIO
+              a(href='#services') SERVICES
             li
-              a(href='./') ABOUT
+              a(href='#portf') PORTFOLIO
             li
-                a(href='./') TEAM
+              a(href='#about') ABOUT
             li
-                a(href='./') CONTACT
+                a(href='#ourteam') TEAM
+            li
+                a(href='#contact') CONTACT
     section(id='hero-img')
         .texto
             p(class='welcome') Welcome To Our Studio!
             h1( id='title') It's nice to meet you 
+            br
             br
             a(href='#' class='btn_yellow' class='border') tell me more
     

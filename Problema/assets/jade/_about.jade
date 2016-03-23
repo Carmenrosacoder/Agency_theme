@@ -4,20 +4,13 @@ section(id='about')
         em(class='text-gris') lorem ipsum dolor si amet consercut
         br
         br
-        br
-        .row
-            .col-lg-4
-                h5 hola
-                p(class='text-gris') lorem ipsum dolor si amet consercutlorem ipsum dolor si amet consercutlorem ipsum dolor si amet consercut
-            .col-lg-4
-                img(src="Problema/img/about/1.jpg" class='img-circle')
-        .row
-            .col-lg-8
-                .col-lg-push-4
-                    img(src="Problema/img/about/1.jpg" class='img-circle')
-            .col-lg-4 
-                    h5 hola
-                    p(class='text-gris') lorem ipsum dolor si amet consercutlorem ipsum dolor si amet consercutlorem ipsum dolor si amet consercut
-            
+        br        
+        #timeline
+            +aboutt('2009-2011', 'Our Humble Beginnings', src="Problema/img/about/2.jpg")            
+            +abouttright('MARCH 2011' , 'An Agency Born', src="Problema/img/about/3.jpg")        
+            +aboutt('DECEMBER 2012' , 'Transition to Full Service', src="Problema/img/about/3.jpg")
+            +abouttright('JULY 2014','Phase Two Expansion' , src="Problema/img/about/4.jpg" )
+             
         
+    
         

@@ -2,27 +2,31 @@
 <html>
   <head>
     <tittle></tittle>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="Problema/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="js/bootstrap.min.js" media="screen" title="no title" charset="utf-8">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400italic" rel="stylesheet" type="text/css">
     <link href="Problema/assets/css/main.css" rel="stylesheet">
   </head>
   <body>
     <header>
       <!-- Fixed navbar-->
-      <div role="navegacion" class="navbar navbar-default navbar-fixed-top">
+      <div role="navegacion" class="navbar navbar-default navbar-fixed-top opaque-navbar">
         <div class="container">
           <div class="navbar-header">
             <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand">Start Bootstrap</a>
           </div>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="#">SERVICES</a></li>
-              <li><a href="#">PORTFOLIO</a></li>
-              <li><a href="./">ABOUT</a></li>
-              <li><a href="./">TEAM</a></li>
-              <li><a href="./">CONTACT</a></li>
+              <li><a href="#services">SERVICES</a></li>
+              <li><a href="#portf">PORTFOLIO</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#ourteam">TEAM</a></li>
+              <li><a href="#contact">CONTACT</a></li>
             </ul>
           </div>
         </div>
@@ -30,11 +34,11 @@
       <section id="hero-img">
         <div class="texto">
           <p class="welcome">Welcome To Our Studio!</p>
-          <h1 id="title">It's nice to meet you </h1><br><a href="#" class="btn_yellow border">tell me more</a>
+          <h1 id="title">It's nice to meet you </h1><br><br><a href="#" class="btn_yellow border">tell me more</a>
         </div>
       </section>
     </header>
-    <section>
+    <section id="services">
       <div class="container">
         <h1 class="text-black">SERVICES</h1><em class="text-gris">lorem ipsum dolor si amet consercut</em><br><br><br>
         <div class="row">
@@ -58,30 +62,42 @@
         <h1 class="text-black">portfolio</h1><em class="text-gris">lorem ipsum dolor si amet consercut</em><br><br><br>
         <div class="row">
           <div class="col-lg-4"><img src="Problema/img/portfolio/roundicons.png">
-              <h5>Round Icons</h5>
-              <p class="text-gris">Graphics Design</p>
+              <div class="mg_t">
+                <h5>Round Icons</h5>
+                <p class="text-gris">Graphics Design</p>
+              </div>
           </div>
           <div class="col-lg-4"><img src="Problema/img/portfolio/startup-framework.png">
-              <h5>Round Icons</h5>
-              <p class="text-gris">Graphics Design</p>
+              <div class="mg_t">
+                <h5>Round Icons</h5>
+                <p class="text-gris">Graphics Design</p>
+              </div>
           </div>
           <div class="col-lg-4"><img src="Problema/img/portfolio/treehouse.png">
-              <h5>Round Icons</h5>
-              <p class="text-gris">Graphics Design</p>
+              <div class="mg_t">
+                <h5>Round Icons</h5>
+                <p class="text-gris">Graphics Design</p>
+              </div>
           </div>
-        </div>
+        </div><br><br><br>
         <div class="row">
           <div class="col-lg-4"><img src="Problema/img/portfolio/golden.png">
-              <h5>Round Icons</h5>
-              <p class="text-gris">Graphics Design</p>
+              <div class="mg_t">
+                <h5>Round Icons</h5>
+                <p class="text-gris">Graphics Design</p>
+              </div>
           </div>
           <div class="col-lg-4"><img src="Problema/img/portfolio/escape.png">
-              <h5>Round Icons</h5>
-              <p class="text-gris">Graphics Design</p>
+              <div class="mg_t">
+                <h5>Round Icons</h5>
+                <p class="text-gris">Graphics Design</p>
+              </div>
           </div>
           <div class="col-lg-4"><img src="Problema/img/portfolio/dreams.png">
-              <h5>Round Icons</h5>
-              <p class="text-gris">Graphics Design</p>
+              <div class="mg_t">
+                <h5>Round Icons</h5>
+                <p class="text-gris">Graphics Design</p>
+              </div>
           </div>
         </div>
       </div>
@@ -89,25 +105,72 @@
     <section id="about">
       <div class="container">
         <h1 class="text-black">ABOUT</h1><em class="text-gris">lorem ipsum dolor si amet consercut</em><br><br><br>
-        <div class="row">
-          <div class="col-lg-4">
-            <h5>hola</h5>
-            <p class="text-gris">lorem ipsum dolor si amet consercutlorem ipsum dolor si amet consercutlorem ipsum dolor si amet consercut</p>
-          </div>
-          <div class="col-lg-4"><img src="Problema/img/about/1.jpg" class="img-circle"></div>
+        <div id="timeline">
+            <div class="timeline-item">
+              <div class="timeline-icon"><img src="Problema/img/about/2.jpg" class="img-circle"></div>
+              <div class="timeline-content">
+                <h5 class="text-right">2009-2011</h5>
+                <h5 class="text-right">Our Humble Beginnings</h5>
+                <p class="text-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-icon"><img src="Problema/img/about/3.jpg" class="img-circle"></div>
+              <div class="timeline-content right">
+                <h5 class="text-left">MARCH 2011</h5>
+                <h5 class="text-left">An Agency Born</h5>
+                <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-icon"><img src="Problema/img/about/3.jpg" class="img-circle"></div>
+              <div class="timeline-content">
+                <h5 class="text-right">DECEMBER 2012</h5>
+                <h5 class="text-right">Transition to Full Service</h5>
+                <p class="text-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-icon"><img src="Problema/img/about/4.jpg" class="img-circle"></div>
+              <div class="timeline-content right">
+                <h5 class="text-left">JULY 2014</h5>
+                <h5 class="text-left">Phase Two Expansion</h5>
+                <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
         </div>
+      </div>
+    </section>
+    <section id="ourteam">
+      <div class="container">
+        <h1 class="text-black">our amazing team</h1><em class="text-gris">lorem ipsum dolor si amet consercut</em><br><br><br>
         <div class="row">
-          <div class="col-lg-8">
-            <div class="col-lg-push-4"><img src="Problema/img/about/1.jpg" class="img-circle"></div>
+          <div class="col-lg-4"><img src="Problema/img/team/1.jpg" class="img-circle">
+              <h5>Kay Garland</h5>
+              <p class="text-gris">Lead Designer</p><i class="fa fa-twitter img-circle  redes"></i><i class="fa fa-facebook img-circle redes"> </i><i class="fa fa-linkedin img-circle redes"> </i>
           </div>
-          <div class="col-lg-4"> 
-            <h5>hola</h5>
-            <p class="text-gris">lorem ipsum dolor si amet consercutlorem ipsum dolor si amet consercutlorem ipsum dolor si amet consercut</p>
+          <div class="col-lg-4"><img src="Problema/img/team/2.jpg" class="img-circle">
+              <h5>Larry Parker</h5>
+              <p class="text-gris">Lead Marketer</p><i class="fa fa-twitter img-circle redes"></i><i class="fa fa-facebook img-circle redes"> </i><i class="fa fa-linkedin img-circle redes"> </i>
+          </div>
+          <div class="col-lg-4"><img src="Problema/img/team/3.jpg" class="img-circle">
+              <h5>Diana Pertesen</h5>
+              <p class="text-gris">Lead Developer</p><i class="fa fa-twitter img-circle redes"></i><i class="fa fa-facebook img-circle redes"> </i><i class="fa fa-linkedin img-circle redes"> </i>
           </div>
         </div>
       </div>
     </section>
-    <footer>
+    <section id="logos">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3"><img src="Problema/img/logos/envato.jpg"></div>
+          <div class="col-lg-3"><img src="Problema/img/logos/designmodo.jpg"></div>
+          <div class="col-lg-3"><img src="Problema/img/logos/themeforest.jpg"></div>
+          <div class="col-lg-3"><img src="Problema/img/logos/creative-market.jpg"></div>
+        </div>
+      </div>
+    </section>
+    <footer id="contact">
       <div class="container">
         <h1>CONTACT US</h1><em>lorem ipsum dolor sit amet consectur</em>
         <div class="row formulario">
@@ -124,5 +187,19 @@
         </div><a href="#" class="btn_yellow border">send message</a>
       </div>
     </footer>
+    <section id="logos">
+      <div class="row">
+        <div class="col-lg-4">
+          <p>Copyright C Your website 2014</p>
+        </div>
+        <div class="col-lg-4"><i class="fa fa-twitter img-circle redes"> </i><i class="fa fa-facebook img-circle redes"></i><i class="fa fa-linkedin img-circle redes"> </i></div>
+        <div class="col-lg-4">
+          <p class="text-yellow">Privacy Policy Terms of Use</p>
+        </div>
+      </div>
+    </section>
+    <script src="Problema/assets/js/jquery.js"></script>
+    <script src="Problema/assets/js/bootstrap.min.js"></script>
+    <script src="Problema/assets/js/agency.js"></script>
   </body>
 </html>
