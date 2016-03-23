@@ -1,3 +1,9 @@
+.text-black {
+  color: black; }
+
+.text-gris {
+  color: #80828A; }
+
 footer {
   background-color: #222222; }
   footer form input {
@@ -25,9 +31,12 @@ h1 {
   text-transform: uppercase;
   color: white; }
 
+h5 {
+  font-weight: bold; }
+
 section, footer {
   text-align: center;
-  padding: 70px 0px; }
+  padding: 100px 0px; }
 
 .btn_yellow {
   color: white;
@@ -37,6 +46,19 @@ section, footer {
 
 .border {
   border-radius: 3px; }
+
+/*services*/
+.fa {
+  font-size: 39px;
+  color: white;
+  background-color: #FED136;
+  padding: 20px; }
+
+/*portfolio*/
+#portf {
+  background-color: #F7F7F7; }
+  #portf img {
+    width: 100%; }
 
 .navbar {
   border: none;
