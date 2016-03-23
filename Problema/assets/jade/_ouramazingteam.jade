@@ -5,13 +5,15 @@ section(id='ourteam')
         br
         br
         br
-        .row
-            .col-lg-4
-                +our_team('Lead Designer' ,'Kay Garland' , 'fa fa-twitter img-circle  redes' , 'fa fa-facebook img-circle redes', 'fa fa-linkedin img-circle redes' , src="Problema/img/team/1.jpg")
-            .col-lg-4
-                +our_team('Lead Marketer' , 'Larry Parker', 'fa fa-twitter img-circle redes' , 'fa fa-facebook img-circle redes', 'fa fa-linkedin img-circle redes' , src="Problema/img/team/2.jpg")
-            .col-lg-4
-                +our_team('Lead Developer' , 'Diana Pertesen', 'fa fa-twitter img-circle redes' , 'fa fa-facebook img-circle redes', 'fa fa-linkedin img-circle redes' , src="Problema/img/team/3.jpg")
+        .row.team
+                .col-lg-4
+                    +our_team('Lead Designer' ,'Kay Garland' , 'fa fa-twitter img-circle  redes' , 'fa fa-facebook img-circle redes', 'fa fa-linkedin img-circle redes' , src="Problema/img/team/1.jpg")
+                .col-lg-4
+                    +our_team('Lead Marketer' , 'Larry Parker', 'fa fa-twitter img-circle redes' , 'fa fa-facebook img-circle redes', 'fa fa-linkedin img-circle redes' , src="Problema/img/team/2.jpg")
+                .col-lg-4
+                    +our_team('Lead Developer' , 'Diana Pertesen', 'fa fa-twitter img-circle redes' , 'fa fa-facebook img-circle redes', 'fa fa-linkedin img-circle redes' , src="Problema/img/team/3.jpg")
+            
+        p(class='text-gris')= tex
 section(id='logos')
     .container
         .row

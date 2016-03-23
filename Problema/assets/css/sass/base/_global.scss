@@ -12,12 +12,14 @@ h1{
 h5{
     font-weight: bold;
 }
+p{
+    font-family: 'Roboto Slab', serif;
+}
 section,footer{
     text-align: center;
     padding: 100px 0px;
 }
 .btn_yellow{
-
     color: white;
     background-color: #FED136;
     padding: 17px 32px;
@@ -32,9 +34,7 @@ section,footer{
 color: white;
 background-color:#FED136;
 padding: 20px;
-
 }
-
 /*portfolio*/
 #portf{
     background-color: #F7F7F7;
@@ -48,21 +48,12 @@ padding: 20px;
         margin-top: -110px;
     }
 }
+/*about*/
 #about{
 img{
-
     background-color: #F0F0ED;
     padding: 10px;
 }
-hr{
-    margin-top: 0px;
-margin-bottom: 0px;
-    width: 2px;
-    height: 120px;
-    text-align: center;
-    background-color: #F0F0ED;
-}
-
 }
 /*our team*/
 #ourteam{
@@ -70,6 +61,9 @@ margin-bottom: 0px;
     img{
         background-color: white;
         padding: 10px;
+    }
+    .team{
+        padding-bottom: 35px;
     }
 }
 .redes{
@@ -115,7 +109,6 @@ $timeline-color: $primary-color;
 		clear: both;
 	}
 }
-
 @mixin prefix($prop, $val) {
 	@each $prefix in '-webkit-', '-moz-', '-ms-', '' {
 		#{$prefix}#{$prop}: $val;
@@ -127,17 +120,13 @@ $timeline-color: $primary-color;
 	-moz-box-sizing: border-box;
 }
 img {max-width: 100%;}
-
 a {
 	text-decoration: none;
 }
-
 .container {
 	max-width: 1100px;
 	margin: 0 auto;
 }
-
-
 // Timeline
 #timeline {
 	width: 100%;
@@ -145,7 +134,6 @@ a {
 	position: relative;
   padding: 0 10px;
 	@include prefix(transition, all .4s ease);
-
 	&:before {
 		content:"";
 		width: 3px;
@@ -155,19 +143,16 @@ a {
 		top: 0;
 		position: absolute;
 	}
-
 	&:after {
 		content: "";
 		clear: both;
 		display: table;
 		width: 100%;
 	}
-
 	.timeline-item {
 		margin-bottom: 110px;
 		position: relative;
 		@extend %clearfix;
-
 		.timeline-icon {
 			width: 140px;
 			height: 140px;
@@ -179,19 +164,15 @@ a {
             margin-top: 20px;
 			@include prefix(border-radius, 50%);
 		}
-
 		.timeline-content {
 			width: 45%;
 			padding: 20px 40px;
-
 			&.right {
 				float: right;
-
 			}
 		}
 	}
 }
-
 @media screen and (max-width: 768px) {
 	#timeline {
 		margin: 30px;
@@ -200,7 +181,6 @@ a {
 		&:before {
 			left: 0;
 		}
-
 		.timeline-item {
 			.timeline-content {
 				width: 90%;
@@ -208,7 +188,6 @@ a {
                 p , h5{
                     text-align: left;
                 }
-
 				&:before, &.right:before {
 					left: 10%;
 					margin-left: -6px;
@@ -216,7 +195,6 @@ a {
 					border-right: 7px solid $timeline-color;
 				}
 			}
-
 			.timeline-icon {
 				left: 0;
                 margin-left: -45px;

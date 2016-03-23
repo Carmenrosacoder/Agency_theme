@@ -42,6 +42,9 @@ h1 {
 h5 {
   font-weight: bold; }
 
+p {
+  font-family: 'Roboto Slab', serif; }
+
 section, footer {
   text-align: center;
   padding: 100px 0px; }
@@ -73,16 +76,10 @@ section, footer {
   #portf .mg_t {
     margin-top: -110px; }
 
+/*about*/
 #about img {
   background-color: #F0F0ED;
   padding: 10px; }
-#about hr {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  width: 2px;
-  height: 120px;
-  text-align: center;
-  background-color: #F0F0ED; }
 
 /*our team*/
 #ourteam {
@@ -90,6 +87,8 @@ section, footer {
   #ourteam img {
     background-color: white;
     padding: 10px; }
+  #ourteam .team {
+    padding-bottom: 35px; }
 
 .redes {
   font-size: 17px;
@@ -218,6 +217,9 @@ a:hover {
 .navbar-default .navbar-nav > li > a:hover {
   color: #FED136; }
 
+.navbar-default .navbar-toggle:hover {
+  background-color: #FED136; }
+
 #hero-img {
   background-image: url(../../img/header-bg.jpg);
   background-size: cover;
@@ -243,10 +245,15 @@ a:hover {
   height: 60px;
   transition: background-color .5s ease 0s; }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .opaque-navbar {
     background-color: black;
     height: 60px;
-    transition: background-color .5s ease 0s; } }
+    transition: background-color .5s ease 0s; }
+
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #FED136;
+    background-color: black;
+    opacity: 0.8; } }
 
 /*# sourceMappingURL=main.css.map */
